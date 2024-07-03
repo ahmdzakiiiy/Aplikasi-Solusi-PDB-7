@@ -39,4 +39,4 @@ function displayResults(taylor, euler, heun, rungeKutta) {
   resultsDiv.appendChild(createTable('Heun Method', heun));
   resultsDiv.appendChild(createTable('Taylor Method', taylor));
   resultsDiv.appendChild(createTable('Runge-Kutta Method', rungeKutta));
-};
+}
