@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solusi PDB - Kelompok 7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Solusi Persamaan Diferensial Biasa</h1>
+        <form id="form">
+            <label for="equation">Persamaan (dy/dt):</label>
+            <input type="text" id="equation" placeholder="Contoh: y - t^2 + 1">
+            
+            <label for="initial-condition">Kondisi Awal y(0):</label>
+            <input type="text" id="initial-condition" placeholder="Contoh: 0.5">
+            
+            <label for="step-size">Ukuran Langkah (h):</label>
+            <input type="text" id="step-size" placeholder="Contoh: 0.1">
+            
+            <label for="steps">Jumlah Langkah:</label>
+            <input type="text" id="steps" placeholder="Contoh: 10">
+            
+            <button type="button" onclick="calculate()">Hitung</button>
+        </form>
+        
+        <div id="results"></div>
+    </div>
+    <script src="methods.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
